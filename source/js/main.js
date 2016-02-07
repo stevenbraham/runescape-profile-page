@@ -1,6 +1,8 @@
 $(document).ready(function() {
   $("#inputUsername").focus();
-  $("#mainForm").on('submit', function() {
+  $("#mainForm").on('submit', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
     $("#loader").show();
     $("#results").hide();
     var username = $("#inputUsername").val();
