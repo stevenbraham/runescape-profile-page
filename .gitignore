@@ -71,3 +71,5 @@ dist/
 build/
 # Grunt usually preprocesses files such as coffeescript, compass... inside the .tmp directory
 .tmp/
+#sorry the icons where quite expensive
+source/icon/
