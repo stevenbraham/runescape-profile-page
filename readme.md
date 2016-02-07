@@ -17,6 +17,10 @@ During development you should execute `grunt build`. This copies everything from
 
 If you want to create your own minified version for production, exectute `grunt dist`.
 
+# Credits
+
+This project uses the [Material design light framework](http://www.getmdl.io/) from Google. The photo in the background was taken by [Ales Krivec](https://stocksnap.io/photo/0091EB4FC5). This project also relies on the jQuery framework.
+
 # License
 
 I have bought the icons used in the live demo, therefore they are not included in this git repo.
