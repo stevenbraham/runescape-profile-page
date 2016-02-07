@@ -1,318 +1,322 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <title>Runescape profile page</title>
-    <link rel="stylesheet" href="/node_modules/material-design-lite/material.min.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="shortcut icon" type="image/png" href="/icon/favicon.png" />
-  </head>
+<head>
+  <title>Runescape profile page</title>
+  <link rel="stylesheet" href="/node_modules/material-design-lite/material.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="shortcut icon" type="image/png" href="/icon/favicon.png" />
+</head>
 
-  <body>
-    <div class="mdl-card mdl-shadow--4dp" id="mainView">
-      <div class="mdl-card__title">
-        <h2 class="mdl-card__title-text">Welcome</h2>
-      </div>
-      <div class="mdl-card__supporting-text">
-        <form action="#" id="mainForm">
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="inputUsername">
-            <label class="mdl-textfield__label" for="inputUsername">Input your Runescape username and press enter</label>
-          </div>
-        </form>
-        <div id="loader" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
-        <div class="mdl-grid" id="results">
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/agility.svg');"></i>
-          <span>Agility</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/attack.svg');"></i>
-          <span>Attack</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/constitution.svg');"></i>
-          <span>Constitution</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/construction.svg');"></i>
-          <span>Construction</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/cooking.svg');"></i>
-          <span>Cooking</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/crafting.svg');"></i>
-          <span>Crafting</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/defence.svg');"></i>
-          <span>Defence</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/divination.svg');"></i>
-          <span>Divination</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/dungeoneering.svg');"></i>
-          <span>Dungeoneering</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/farming.svg');"></i>
-          <span>Farming</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/firemaking.svg');"></i>
-          <span>Firemaking</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/fishing.svg');"></i>
-          <span>Fishing</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/fletching.svg');"></i>
-          <span>Fletching</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/herblore.svg');"></i>
-          <span>Herblore</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/hunter.svg');"></i>
-          <span>Hunter</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/invention.svg');"></i>
-          <span>Invention</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/magic.svg');"></i>
-          <span>Magic</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/mining.svg');"></i>
-          <span>Mining</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/prayer.svg');"></i>
-          <span>Prayer</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/ranged.svg');"></i>
-          <span>Ranged</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/runecrafting.svg');"></i>
-          <span>Runecrafting</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/slayer.svg');"></i>
-          <span>Slayer</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-          <div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/smithing.svg');"></i>
-          <span>Smithing</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div><div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/summoning.svg');"></i>
-          <span>Summoning</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div><div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/thieving.svg');"></i>
-          <span>Thieving</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div><div class="mdl-cell mdl-cell--6-col">
-            <li class="mdl-list__item mdl-list__item--three-line">
-              <span class="mdl-list__item-primary-content">
-          <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/woodcutting.svg');"></i>
-          <span>Woodcutting</span>
-              <span class="mdl-list__item-text-body">
-            <b>Lvl 56</b> 1000xp
-          </span>
-              </span>
-            </li>
-          </div>
-        </div>
-        <small>&copy;2016 Steven Braham | <a href="https://github.com/stevenbraham/runescape-profile-page" target="_blank">Click here for more information about this tool</a></small>
-      </div>
+<body>
+  <div class="mdl-card mdl-shadow--4dp" id="mainView">
+    <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Runescape profile page</h2>
     </div>
-    <script src="/node_modules/material-design-lite/material.min.js"></script>
-    <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="/js/main.js"></script>
-  </body>
+    <div class="mdl-card__supporting-text">
+      <form action="#" id="mainForm">
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" id="inputUsername">
+          <label class="mdl-textfield__label" for="inputUsername">Input your Runescape username and press enter</label>
+        </div>
+      </form>
+      <div id="loader" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+      <div class="mdl-grid" id="results">
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/agility.svg');"></i>
+              <span>Agility</span>
+              <span class="mdl-list__item-text-body" data-index="17">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/attack.svg');"></i>
+              <span>Attack</span>
+              <span class="mdl-list__item-text-body" data-index="1">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/constitution.svg');"></i>
+              <span>Constitution</span>
+              <span class="mdl-list__item-text-body" data-index="4">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/construction.svg');"></i>
+              <span>Construction</span>
+              <span class="mdl-list__item-text-body" data-index="23">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/cooking.svg');"></i>
+              <span>Cooking</span>
+              <span class="mdl-list__item-text-body" data-index="8">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/crafting.svg');"></i>
+              <span>Crafting</span>
+              <span class="mdl-list__item-text-body" data-index="13">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/defence.svg');"></i>
+              <span>Defence</span>
+              <span class="mdl-list__item-text-body" data-index="2">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/divination.svg');"></i>
+              <span>Divination</span>
+              <span class="mdl-list__item-text-body" data-index="26">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/dungeoneering.svg');"></i>
+              <span>Dungeoneering</span>
+              <span class="mdl-list__item-text-body" data-index="25">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/farming.svg');"></i>
+              <span>Farming</span>
+              <span class="mdl-list__item-text-body" data-index="20">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/firemaking.svg');"></i>
+              <span>Firemaking</span>
+              <span class="mdl-list__item-text-body" data-index="12">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/fishing.svg');"></i>
+              <span>Fishing</span>
+              <span class="mdl-list__item-text-body" data-index="11">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/fletching.svg');"></i>
+              <span>Fletching</span>
+              <span class="mdl-list__item-text-body" data-index="10">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/herblore.svg');"></i>
+              <span>Herblore</span>
+              <span class="mdl-list__item-text-body" data-index="16">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/hunter.svg');"></i>
+              <span>Hunter</span>
+              <span class="mdl-list__item-text-body" data-index="22">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/magic.svg');"></i>
+              <span>Magic</span>
+              <span class="mdl-list__item-text-body" data-index="7">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/mining.svg');"></i>
+              <span>Mining</span>
+              <span class="mdl-list__item-text-body" data-index="15">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/prayer.svg');"></i>
+              <span>Prayer</span>
+              <span class="mdl-list__item-text-body" data-index="6">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/ranged.svg');"></i>
+              <span>Ranged</span>
+              <span class="mdl-list__item-text-body" data-index="5">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/runecrafting.svg');"></i>
+              <span>Runecrafting</span>
+              <span class="mdl-list__item-text-body" data-index="21">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/slayer.svg');"></i>
+              <span>Slayer</span>
+              <span class="mdl-list__item-text-body" data-index="19">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/smithing.svg');"></i>
+              <span>Smithing</span>
+              <span class="mdl-list__item-text-body" data-index="14">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/strength.svg');"></i>
+              <span>Strength</span>
+              <span class="mdl-list__item-text-body" data-index="3">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/summoning.svg');"></i>
+              <span>Summoning</span>
+              <span class="mdl-list__item-text-body" data-index="24">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/thieving.svg');"></i>
+              <span>Thieving</span>
+              <span class="mdl-list__item-text-body" data-index="18">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+        <div class="mdl-cell mdl-cell--6-col">
+          <li class="mdl-list__item mdl-list__item--three-line">
+            <span class="mdl-list__item-primary-content">
+              <i class="mdl-list__item-avatar skillIcon" style="background: url('/icon/woodcutting.svg');"></i>
+              <span>Woodcutting</span>
+              <span class="mdl-list__item-text-body" data-index="9">
+                Never trained
+              </span>
+            </span>
+          </li>
+        </div>
+      </div>
+      <small>&copy;2016 Steven Braham | <a href="https://github.com/stevenbraham/runescape-profile-page" target="_blank">Click here for more information about this tool</a></small>
+    </div>
+  </div>
+  <script src="/node_modules/material-design-lite/material.min.js"></script>
+  <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
 
 </html>
